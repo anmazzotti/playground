@@ -3,6 +3,12 @@
   "extends": [
     "config:recommended"
   ],
+  "hostRules": [
+    {
+      "matchHost": "github.com",
+      "token": "{{ secrets.RENOVATE_TOKEN }}"
+    }
+  ],
   "baseBranches": [
     "main",
     "release"
